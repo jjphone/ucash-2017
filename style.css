@@ -9686,10 +9686,10 @@ div#repay-values.set.dragging .animate > span.digitals {
 }
 /* line 18, scss/sass/partials/_home-people.scss */
 .home-people .broadcast.message > div > div.avatar > img {
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  border-radius: 18px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
 }
 /* line 22, scss/sass/partials/_home-people.scss */
 .home-people .broadcast.message > div > div.msg-content {
@@ -9911,19 +9911,19 @@ div#carousel-brands > .carousel-inner > .item > .carousel-col:hover > .wrapper {
 @media (min-width: 768px) {
   /* line 54, scss/sass/partials/_contact.scss */
   .fullwidth-container {
-    margin-top: -20em;
+    margin-top: -16em;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 57, scss/sass/partials/_contact.scss */
   .fullwidth-container {
-    margin-top: -25vh;
+    margin-top: -20em;
   }
 }
 @media (min-width: 1200px) {
   /* line 60, scss/sass/partials/_contact.scss */
   .fullwidth-container {
-    margin-top: -25vh;
+    margin-top: -32vh;
   }
 }
 /* line 2, scss/sass/partials/_contact-form.scss */

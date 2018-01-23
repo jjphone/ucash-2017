@@ -4,9 +4,6 @@
  */
 
 get_header(); ?>
-<!-- template-contact.php -->
-
-
 
 <div class="fullwidth-container help">
 	<div class="contact-feature">
@@ -32,8 +29,7 @@ get_header(); ?>
 
 				
 			<?php get_template_part('template-parts/help/nav', null); ?>		
-			<?php /*get_template_part('template-parts/help/test', null);*/ ?>		
-				
+
 			</div> 
 		</main>
 
@@ -44,6 +40,5 @@ get_header(); ?>
 
 
 	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
 
 <?php get_footer();

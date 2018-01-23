@@ -4,7 +4,7 @@
  * mobile.php
  */
 ?>
-<div class="mobile-options"> <!-- cols -->
+<div class="mobile-options"> 
   <?php get_template_part('template-parts/home/mobile', "options-en");  ?>
 </div>
 <div class="mobile-image">

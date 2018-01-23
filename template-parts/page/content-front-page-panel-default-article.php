@@ -1,12 +1,11 @@
-<!-- content-front-page-pannel -> default-article -->
-<!-- .panel-content  -->
+
 <div class="wrap">
   <header class="entry-header">
     <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
     <?php twentyseventeen_edit_link( get_the_ID() ); ?>  - <?php echo get_page_template_slug( $post->ID ); ?>
 
-  </header><!-- .entry-header -->
+  </header>
 
   <div class="entry-content">
     <?php
@@ -16,7 +15,7 @@
         get_the_title()
       ) );
     ?>
-  </div><!-- .entry-content -->
+  </div>
 
   <?php
   // Show recent blog posts if is blog posts page (Note that get_option returns a string, so we're casting the result as an int).
@@ -41,8 +40,8 @@
         endwhile;
         wp_reset_postdata();
         ?>
-      </div><!-- .recent-posts -->
+      </div>
     <?php endif; ?>
   <?php endif; ?>
 
-</div><!-- .wrap -->
+</div>

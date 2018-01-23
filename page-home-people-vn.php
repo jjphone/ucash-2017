@@ -1,4 +1,4 @@
-<!--## page-home-people.php -->
+
 <?php
 /**
  * Display graph on Homepage 
@@ -10,27 +10,24 @@
 	}
 ?>
 
-<div class="home-frontpage"> <!--## container-fluid -->
-
+<div class="home-frontpage"> 
   <div class="row"><div class="home-people "> 
 
 
-
-  	<div class="row"> <!--## row -->
+  	<div class="row"> 
   		<?php get_template_part('template-parts/home/people', 'broadcast-vn');	?>
 
-  	</div> <!-- row ##-->
+  	</div>
 
-  	<div><!--## row -->
+  	<div>
   		<?php
 				while ( have_posts() ) : the_post();
 
 					get_template_part( 'template-parts/home/people', null );
-          //get_template_part( 'template-parts/home/people', test );
-
+          
 				endwhile; // End of the loop.
 		  ?>
-  	</div> <!-- row ##-->
+  	</div>
 
 	</div></div>
 </div>

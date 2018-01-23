@@ -1,4 +1,3 @@
-<!--## page-home-mobile-vn.php -->
 <?php
 /**
  * Display mobile section at hoepage
@@ -11,21 +10,20 @@
 	}
 ?>
 
-<div class="home-frontpage mobile"> <!--## container-fluid -->
+<div class="home-frontpage mobile"> 
 
   <div class="row"><div class="home-mobile"> 
 
 
 
-  	<div class="row"> <!--## row -->
+  	<div class="row"> 
       <div id="bg-wrapper">
         <div class="row">
   		    <?php get_template_part('template-parts/home/mobile-vn', null);	?>
         </div>
       </div>
 
-  	</div> <!-- row ##-->
-
+  	</div> 
 
 
 	</div></div>

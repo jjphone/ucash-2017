@@ -5,8 +5,6 @@
  */
 
 ?>
-
-<!-- graph-left -->
 <div class="graph-left-box">
   <div class="box-wrapper" >
     <h2>Lựa chọn khoản vay</h2>

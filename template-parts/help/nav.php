@@ -1,4 +1,4 @@
-<div class="row"> <!-- row -->
+<div class="row">
 
   <div  class="help-wrap options"> <div class="row">
 
@@ -57,7 +57,7 @@
   </div> </div>
 </div>
 
-<div class="menu-details" > <!-- row -->
+<div class="menu-details" >
   <div class="help-wrap">
     <div class="row">
 
@@ -66,7 +66,7 @@
             aria-labelledby = "guide-link"
             class           = "details collapse in"
           
-            >  <!-- wrapper - not col- -->
+            > 
         <?php get_template_part('template-parts/help/nav', 'guide');  ?>
       </div>
 

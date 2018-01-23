@@ -12,7 +12,6 @@ global $twentyseventeencounter;
 
 ?>
 
-<!--## content-front-page-panel.php -->
 
 <article id="panel<?php echo $twentyseventeencounter; ?>" <?php post_class( 'twentyseventeen-panel ' ); ?> >
 
@@ -25,7 +24,7 @@ global $twentyseventeencounter;
 
 		<div class="panel-image" style="background-image: url(<?php echo esc_url( $thumbnail[0] ); ?>);">
 			<div class="panel-image-prop" style="padding-top: <?php echo esc_attr( $ratio ); ?>%"></div>
-		</div><!-- .panel-image -->
+		</div>
 
 	<?php endif; ?>
 
@@ -40,6 +39,6 @@ global $twentyseventeencounter;
 			}
 		?>
 
-	</div><!-- .panel-content -->
+	</div>
 
-</article><!-- #post-## -->
+</article>

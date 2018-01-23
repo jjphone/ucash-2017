@@ -4,9 +4,9 @@
  * mobile.php
  */
 ?>
-<div class="mobile-options "> <!-- cols -->
+<div class="mobile-options "> 
   <?php get_template_part('template-parts/home/mobile', "options");  ?>
-</div> <!-- ... -->
+</div> 
 <div class="mobile-image">
    <?php get_template_part('template-parts/home/mobile', "images");  ?>
 </div>

@@ -1,4 +1,3 @@
-<!-- inform.php -->
 <h3>Our Information</h3>
 <div>
   <div>consumer hotline</div>

@@ -10,9 +10,6 @@
 
 ?>
 
-
-
-<!--## content-front-page-en.php -->
 <script type="text/javascript">
   window.ucashConfig = { language: "english", currencyDelimiter: "," };
 </script>
@@ -21,7 +18,6 @@
 	<?php if ( has_post_thumbnail() ) :
 		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'twentyseventeen-featured-image' );
 
-		// Calculate aspect ratio: h / w * 100%.
 		$ratio = $thumbnail[2] / $thumbnail[1] * 100;
 		?>
 
@@ -35,13 +31,13 @@
 
 			<div class="panel-image-prop" style="padding-top: <?php echo esc_attr( $ratio ); ?>%"></div>
 
-		</div><!-- .panel-image -->
+		</div>
 
 	<?php endif; ?>
 
-	<div class="home-frontpage"> <!--## container-fluid -->
+	<div class="home-frontpage">
 
-    <div class="row"><div class="home-content"> <!--## row home-content -->
+    <div class="row"><div class="home-content">
       <div>  
         <div class="halves left">
           <?php get_template_part( 'template-parts/home/graph', 'left-en' );?>
@@ -57,8 +53,8 @@
         <?php get_template_part('template-parts/home/thumbs', 'en'); ?>
       </div>  
 
-    </div></div> <!-- home-content row ##-->
+    </div></div> 
 
-	</div> <!--  container-fluid end ##-->
+	</div> 
 
-</article><!-- #post-## -->
+</article>

@@ -4,8 +4,6 @@
  */
 ?>
 
-<!-- graph-left-line-en -->
-
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
@@ -34,4 +32,4 @@
 
   <div class="legend"><b>VN₫ </b>x 1,000,000</div>
 
-</div>  <!-- graph ##-->
+</div>  

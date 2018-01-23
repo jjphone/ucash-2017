@@ -5,7 +5,7 @@
 
 get_header("skipFeatureImage"); ?>
 
-<!--## font-page.php -->
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
@@ -40,7 +40,7 @@ get_header("skipFeatureImage"); ?>
 
 	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
 
-	</main><!-- #main -->
-</div><!-- #primary -->
+	</main>
+</div>
 
 <?php get_footer();

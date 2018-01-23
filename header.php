@@ -13,7 +13,6 @@
  */
 
 ?><!DOCTYPE html>
-<!-- ### comment ###  - child/header.php  -->
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -22,7 +21,7 @@
 
 <?php wp_head(); ?>
 
-<!-- bootstrap js -->
+
 <script type="text/javascript" src="/wp-content/themes/2017-child/assets/javascripts/bootstrap/transition.js"></script>
 
 <script type="text/javascript" src="/wp-content/themes/2017-child/assets/javascripts/bootstrap/collapse.js"></script>
@@ -36,7 +35,6 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-	<!-- 	<?php /* get_template_part( 'template-parts/header/header', 'image' ); */ ?> -->
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
@@ -44,12 +42,12 @@
 				
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-				</div><!-- .wrap -->
+				</div>
 
-			</div><!-- .navigation-top -->
+			</div>
 		<?php endif; ?>
 
-	</header><!-- #masthead -->
+	</header>
 
 	<?php
 
@@ -60,11 +58,10 @@
 	if ( ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
 		echo '<div class="single-featured-image-header">';
 		echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
-		echo '</div><!-- .single-featured-image-header -->';
+		echo '</div>';
 	endif;
 	?>
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
 
-<!-- ### comment ###  - child/header.php  end -->

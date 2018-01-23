@@ -4,12 +4,8 @@
  */
 ?>
 
-
-
-<!-- brands.php -->
-
 <div id="carousel-brands" class="carousel slide " data-interval="2500" data-pause=" " >
-  <!-- Indicators -->
+
   <ol class="carousel-indicators">
     <?php 
       $len = contact_item_count();
@@ -23,7 +19,6 @@
     
   </ol>
 
-  <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <?php 
         $brand_list = contact_brands();
@@ -38,16 +33,15 @@
           }
       ?>
 
-        </div> <!-- wrapper slide-x end -->
+        </div>
 
       <?php
         }
         unset($brand);
       ?>
      
-    </div> <!-- carousel-inner ##-->
+    </div> 
 
-  <!-- Controls -->
   <?php 
     if( contact_item_count() > 1 ) {
       get_template_part( 'template-parts/contact/brands', 'controls');

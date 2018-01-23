@@ -6,7 +6,6 @@
 
 <div id="carousel" class="carousel slide container"  data-type="multi" data-interval="2500" data-pause=" ">
 
-  <!--## Indicators -->
   <ol class="carousel-indicators">
     <?php 
 
@@ -21,7 +20,7 @@
     ?>
   </ol>
 
-  <!-- Main displays -->
+
   <div class="carousel-inner " role="listbox">
     <?php
 
@@ -30,7 +29,7 @@
         set_query_var('pos', $key);
         get_template_part( 'template-parts/home/people', 'slide' ); 
       }
-      // break the reference with the last element
+
       unset($pos);
       unset($p);
       unset($person); 
@@ -38,7 +37,7 @@
     ?>
   </div>
 
-  <!-- Controls -->
+
   <?php 
     get_template_part( 'template-parts/home/people', 'control' );
   ?>

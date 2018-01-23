@@ -5,9 +5,6 @@
  */
 
 get_header(); ?>
-<!-- template-contact.php -->
-
-
 
 <div class="fullwidth-container download">
 	<div class="contact-feature">
@@ -48,6 +45,6 @@ get_header(); ?>
 
 
 	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+</div>
 
 <?php get_footer();

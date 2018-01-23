@@ -1,30 +1,28 @@
-<!--## page-home-mobile-en.php -->
 <?php
 /**
  * Display mobile section at hoepage
  * Template Name: page-home-mobile-en
  */
 
-	/* skip the header if partial rendering */
 	if ( get_current_template() == 'page-home-mobile' ) {
 		get_header(); 
 	}
 ?>
 
-<div class="home-frontpage mobile"> <!--## container-fluid -->
+<div class="home-frontpage mobile">
 
   <div class="row"><div class="home-mobile"> 
 
 
 
-  	<div class="row"> <!--## row -->
+  	<div class="row"> 
       <div id="bg-wrapper">
         <div class="row">
   		    <?php get_template_part('template-parts/home/mobile-en', null);	?>
         </div>
       </div>
 
-  	</div> <!-- row ##-->
+  	</div> 
 
 
 

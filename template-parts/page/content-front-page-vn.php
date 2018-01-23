@@ -10,7 +10,6 @@
 
 ?>
 
-<!--## content-front-page.php -->
 <script type="text/javascript">
   window.ucashConfig = { language: "english", currencyDelimiter: "." };
 </script>
@@ -32,13 +31,13 @@
 
 			<div class="panel-image-prop" style="padding-top: <?php echo esc_attr( $ratio ); ?>%"></div>
 
-		</div><!-- .panel-image -->
+		</div>
 
 	<?php endif; ?>
 
-	<div class="home-frontpage"> <!--## container-fluid -->
+	<div class="home-frontpage">
 
-    <div class="row"><div class="home-content"> <!--## row home-content -->
+    <div class="row"><div class="home-content"> 
       <div>  
         <div class="halves left">
           <?php get_template_part( 'template-parts/home/graph', 'left-vn' );?>
@@ -54,8 +53,8 @@
         <?php get_template_part('template-parts/home/thumbs', 'vn'); ?>
       </div>  
 
-    </div></div> <!-- home-content row ##-->
+    </div></div> 
 
-	</div> <!--  container-fluid end ##-->
+	</div> 
 
-</article><!-- #post-## -->
+</article> 

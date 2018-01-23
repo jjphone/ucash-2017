@@ -13,7 +13,6 @@
 get_header(); ?>
 
 
-<!-- index.php @ child theme -->
 
 <div class="wrap">
 	<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -57,9 +56,9 @@ get_header(); ?>
 			endif;
 			?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+</div>
 
 <?php get_footer();
