@@ -1,0 +1,37 @@
+@import "partials/description";
+
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "partials/fonts";
+
+@import "bootstrap-variables";
+
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+@import "partials/define";
+@import "partials/navigation";
+@import "partials/layout";
+
+
+@import "partials/home-left-line";
+@import "partials/home-left-table";
+@import "partials/home-thumbs";
+@import "partials/home-mobile";
+@import "partials/home-people";
+
+@import "partials/carousel";
+@import "partials/home-carousel";
+@import "partials/contact-carousel";
+
+@import "partials/contact";
+@import "partials/contact-form";
+
+@import "partials/help";
+
+@import "partials/download";
+
+@import "partials/footer";

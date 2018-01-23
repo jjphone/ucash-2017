@@ -1,0 +1,85 @@
+.home-frontpage.mobile{
+  background: $color-li;
+}
+
+.home-mobile{
+  @extend %home-wrap;
+  min-height: 10em;
+  position: relative;
+
+  #bg-wrapper{
+    @extend .col-sm-12;
+    padding: 2em 0;
+
+    >div{
+      @extend %display-flex; //flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row; 
+    }
+
+    background-image: url("/wp-content/themes/2017-child/assets/images/apps/mobile-bg.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+
+
+  .mobile-options {
+    @extend .col-md-8; @extend .col-md-offset-0;
+    @extend .col-sm-5; @extend .col-sm-offset-1;
+    @extend .col-xs-12; @extend .col-xs-offset-0;
+    min-height: 10em;
+
+    .option{
+      padding: 2em 1em;
+      @extend .col-sm-6; 
+      @extend .col-xs-12;
+      >img { @extend .img-responsive; }
+      >div>h3, >div>p {
+        width: 100%;
+        color: $font-dk-main;
+      }
+      >div>h3{ padding: 0.5em 0 0;}
+
+    }
+  }
+  .mobile-image {
+    @extend .col-md-4; @extend .col-md-offset-0;
+    @extend .col-sm-6; @extend .col-md-offset-0;
+    @extend .col-xs-12; @extend .col-md-offset-0;
+    padding: 1em;
+
+
+
+    @import "partials/home-mobile-map";
+    
+    .item>img { @extend .img-responsive; }
+  }
+
+}
+
+@media (max-width: $screen-xs-max ){
+  .home-mobile .mobile-options .option {
+    >img, >div {
+      display: inline-block; 
+      margin: 0 2em 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .home-mobile.parallax {
+    background-attachment: fixed;
+  }
+
+  .home-mobile .mobile-options .option {
+    >img, >div {
+      display: block;
+      margin: 0;
+    }
+  }
+
+
+}

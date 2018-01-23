@@ -1,0 +1,57 @@
+/* homepage people carousel  */
+
+
+div#carousel{
+
+  >.carousel-inner{ 
+
+    >.item {
+      
+      >.carousel-col {
+        @extend .col-lg-3;
+        @extend .col-md-4;
+        @extend .col-sm-6;
+        @extend .col-xs-12;
+        float: left;min-height: 1px; 
+
+        >.wrapper{padding-bottom: 50px; }
+        
+        img { 
+          //margin: 0 auto 100px; 
+          padding-bottom: 100px;
+        }
+
+        .carousel-caption {
+          background: white; left:0;right:0;bottom:0;
+          text-shadow: none;
+
+          >h3, h4{ padding: 0;}
+
+          >h3{ 
+            color: $color-li; font-size:1.2em;
+            margin: 0 auto;
+          }
+
+          >h4{
+            margin:0.6em auto;
+            font-size: 1em;color: $font-li-light;
+          }
+
+          >p{ 
+            color: $font-li-main2; 
+            font-size: 0.6em; margin:0 0.8em;
+          }
+        }
+
+      }
+
+      //>.carousel-col:first-child { @extend %carousel-slide-hover; }
+
+      >.carousel-col:hover >.wrapper { @include box-shadow(5px, 5px, 5px, grey ); }
+      
+    }
+  } 
+
+
+}  /* .carousel  ##*/
+

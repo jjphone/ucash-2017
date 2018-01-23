@@ -1,0 +1,34 @@
+.footer-content {
+  @extend %home-wrap;
+  text-align: center; vertical-align: center;
+  margin-top: 2*$margin-vertical-em;
+  margin-bottom: 2*$margin-vertical-em;
+  
+  >div.logo{
+    display: inline; 
+
+    >img {
+      margin-right: $margin-side-em; 
+      width: 25px; height:25px;
+    }    
+    >h3 { 
+      display:inline; 
+      font-size:1.6em;
+      &:before {
+        content: " | ";
+        font-size: 1.3em;
+        margin-right: 10px;
+      }
+    }
+  }
+  >div.copyright{
+    margin-top: $margin-vertical-em;
+    >p{
+      font-size: 1.3em;
+      color: $font-li-main2;
+    }
+    
+  }
+
+
+}

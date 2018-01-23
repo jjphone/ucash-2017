@@ -1,0 +1,56 @@
+div#carousel, 
+div#carousel-brands {
+
+  @extend .col-xs-12;
+  margin-top: 3em; padding: 3em 0;
+
+  
+
+  >.carousel-inner{ 
+    height:100%;
+    width: 100%; max-width: $full-content-width;
+    @extend .center-elem;
+
+    >.item {
+      width: 100%;
+
+      >.carousel-col>.wrapper {
+        margin:10px; 
+        position:relative ;
+        cursor: pointer;
+      
+        img { @extend .img-responsive;width: 100%; }
+      }
+      >.carousel-col { @extend  %carousel-slide-default; }
+      >.carousel-col:hover{ @extend %carousel-slide-hover; }     
+
+    } //item end##
+  } 
+
+/* .carousel controls */
+  >.carousel-control.left, >.carousel-control.right { 
+      margin-right: 40px; margin-left: 32px; opacity: 0.8;
+  }
+
+  >.carousel-control { 
+    width: 0px;
+
+    >a>span { color: $color-li; font-size: 1.5em !important; }
+    >a>span{ color: $color-li-white;}
+    >a:hover>span{  color: $color-darkest; text-shadow: 3px 3px 5px grey; }
+  }
+
+
+/* carousel indicators */
+  >.carousel-indicators { bottom: 0;}
+  >.carousel-indicators li{
+    width:25px; height: 6px; margin: 0 0.8em; border: 0;
+    background: $font-li-light;
+
+    &:hover{ background: $color-li; height: 8px; }
+  }
+
+  >.carousel-indicators li.active{ background: $color-li-white; }
+
+
+}

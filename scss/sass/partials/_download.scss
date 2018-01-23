@@ -1,0 +1,99 @@
+.download-wrap{
+  @extend %home-wrap;
+  padding-top: 5em;
+  >div.row {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+
+    > div {
+      @extend .col-sm-6; @extend .col-xs-12;
+      @include flex-size(1);
+    }
+  }
+
+}
+
+.quick-access{
+  
+  @extend .box-wrapper;
+  border: 1px solid $font-li-light;
+  @include border-radius(1em);
+  @extend .center-elem;
+  
+
+  >h3>span{
+    @extend .glyphicon; 
+    @extend .glyphicon-menu-right;
+    font-size: 0.8em; padding: 1px;
+    border: 1px solid $color-li;
+    @include border-radius(0.6em);
+    background: $color-li; 
+    color: $font-dk-main;
+    margin-right: 1em;
+  }
+
+  form{
+    margin: 2em 1em;
+    p>span.wpcf7-form-control-wrap{
+      display: inline-block;
+      width: 100%;
+      @extend .glyphicon; @extend .glyphicon-user;
+
+      &:before{
+        vertical-align: middle;
+        padding: 0.7em; margin:0;
+        border-color: $font-li-light; border-style: solid; border-width: 1px 0 1px 1px;
+        color: $font-li-light; background: #eee;
+      }
+
+      >input, >select{
+        vertical-align: middle;
+        display: inline-block;
+        border-radius: 0;
+        width: 80%;
+      }
+
+      >select{
+        height:2.65em;
+        background: $font-dk-main;
+      }
+
+      >span.wpcf7-not-valid-tip { margin: 0.5em auto 1.5em; }
+    }
+
+    p>span.user{ @extend .glyphicon-user;     }
+    p>span.tel { @extend .glyphicon-earphone; }
+    p>span.area{ @extend .glyphicon-globe;    }
+
+    >div{
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+
+      >input[type="submit"]{
+        border: 1px solid $color-li;
+        @include border-radius(2em);
+        color: $color-li;
+        background: $font-dk-main;
+        font-size: 0.8em;
+        width: 15em;
+      }
+      >input[type="submit"]:hover, input[type="submit"]:focus {
+        color: $font-dk-main;
+        background: $color-li;
+      }
+
+    }
+
+    div[class$="response-output"] {
+      border: 1px solid;
+      @include border-radius(5px);
+    }
+
+    div[class*="mail-sent-ok"] { border-color: $color-li; color: $color-darkest; }
+
+    div[class*="errors"] {border-color: red;  color: red; }
+
+  }
+}

@@ -1,0 +1,30 @@
+.home-people{
+  margin-top: 3em;
+  @extend %home-wrap;
+  .broadcast.title{
+    @extend .col-sm-3;
+    @extend .col-xs-12;
+  }
+  .broadcast.message {
+    @extend .col-sm-7; @extend .col-sm-offset-2;
+    @extend .col-xs-12; 
+    
+    >div{ @extend .row;}
+    >div>div.avatar{
+      vertical-align: center;
+      @extend .col-xs-2;
+      @extend .col-sm-3;
+      border-right: 2px solid $font-dk-light;
+      >img {@include border-radius(20px);}
+    
+    }
+
+    >div>div.msg-content{ 
+      vertical-align: center;
+      @extend .col-xs-10;
+      @extend .col-sm-9;
+    }
+  }
+}
+
+ 

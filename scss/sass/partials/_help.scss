@@ -1,0 +1,155 @@
+.help.fullwidth-container h2.page-title {font-size: 1em;}
+
+.help-wrap{
+  @extend %home-wrap;
+
+
+
+}
+
+.menu > div {
+  @extend .row;
+}
+
+#help-menu  div.links {
+
+  @extend .col-sm-4;
+  @extend .col-xs-12; //more change for col-xs-12 below
+
+  text-align: center;
+  padding: 2em 0 2em;
+  
+
+  a, img { border: 1px solid $color-li-white; }
+  img{ 
+    margin: 1.5em auto 0; @include border-radius(2em);
+  }
+  h4{ margin-bottom: 1.5em; }
+  a {
+
+    @extend .hidden-xs;
+    text-decoration: none;
+    padding: 0.5em 2em; margin:2em auto 2em;
+    @include border-radius(2em);
+    color: $color-li; background: $font-dk-main;
+  }
+  >span.tooltip-arrow {
+    border-width: 0 10px 10px 10px;border-bottom-color: $color-li;
+    left:50%; bottom: 0;
+  }
+
+}
+
+
+#help-menu  div.links:hover a ,
+#help-menu  div.links a:hover {
+  color: $font-dk-main; background: $color-li;
+}
+
+
+#help-menu  div.links:not(.collapsed) { cursor: not-allowed; }
+#help-menu  div.links.collapsed { cursor: pointer; }
+
+
+
+#help-menu  div.links           > span.tooltip-arrow   { @extend .hidden-xs;   display: block; }
+#help-menu  div.links.collapsed > span.tooltip-arrow   { display: none; }
+
+@media (max-width: $screen-sm-min)  { 
+  #help-menu  div.links { 
+    border: 1px solid $color-li-white; 
+    padding: 1em 5%; text-align: left;
+    //color: $color-li;
+    img, h4 { display: inline;}
+    img{ margin:0 1em 0 0 ; }
+  }
+
+
+  #help-menu  div.links.collapsed { 
+    color: $font-li-main;
+    &:hover{ color: $font-dk-main; background: $color-li;  }
+  }
+  #help-menu  div.links:not(.collapsed){
+    background: $color-darkest; color: $font-dk-main;
+  }
+
+}
+
+.menu-details{
+  @extend .row;
+
+  >.help-wrap{    
+    background-image: url("/wp-content/themes/2017-child/assets/images/help/help-guide.png");
+    background-position: center center;
+    background-repeat: repeat;
+  }
+
+  background-color: $color-li;
+  padding:0 1em ;
+
+
+
+  .details{     
+    padding-top: 3em; 
+    //@extend %display-flex; flex-wrap: wrap; 
+  }
+
+  .details > .list-footer{ 
+    @extend .col-xs-12; 
+    padding-top: 3em;
+    text-align: right; color: $font-dk-light;
+  } 
+
+
+  .details .option-title{ 
+    @extend .col-lg-4;
+ 
+    @extend .col-sm-3;
+    @extend .col-xs-12;
+
+    color: $font-dk-main;
+    text-align: left; 
+    >h3 {font-weight: bold; margin-bottom: 2em;}
+
+    //display: flex;
+    //flex-direction: column;
+
+    /* background-image: url("/wp-content/themes/2017-child/assets/images/help/help-people.png");
+    background-position: left bottom;
+    background-repeat: no-repeat; */
+  }
+  .details .option-list{
+    @extend .col-lg-8;
+
+    @extend .col-sm-9;
+    @extend .col-xs-12;
+    padding: 0 2em 0;
+    color: $font-dk-light;
+
+
+
+
+    >div{ padding: 1em 5px 0.5em ;
+      ol { margin-left: 1em;} 
+    }
+    >div.item { 
+      width: 100%; 
+      display: block;
+      padding: 2em 0 0.5em; margin-bottom: 10px;
+      border-bottom: 2px solid $color-darkest;
+    } 
+
+
+    a {
+      width: 100%; text-decoration: none; font-weight: bold;
+      color: $font-dk-main;
+    }
+    a                 > span { @extend .glyphicon; float: right; }
+    a.collapsed       > span { @extend .glyphicon-menu-down; }
+    a:not(.collapsed) > span { @extend .glyphicon-menu-up;   }
+
+  }
+
+
+
+}

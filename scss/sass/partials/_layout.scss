@@ -1,0 +1,149 @@
+
+
+body{
+  overflow-x: hidden; //truncate navbar overflow
+}
+
+.site-content-contain{ padding-top:3.5em;}
+
+.page-title{
+  margin-top: 2em; font-size: 2em;
+
+}
+
+.single-featured-image-header{ 
+  background-color: $color-li;
+  padding-top: 5em;
+  border:0;
+  
+  >img { 
+    //max-width: $max-banner-width;
+  }
+
+}
+.panel-image:before{
+  background: none;
+}
+
+main#main article div.panel-image{
+  background-position: center 2em;
+  background-color: $color-li;
+
+  height: 100vh;
+
+  .panel-title{
+    margin: 76vh auto 0; 
+    width: 100%; padding:0;
+    text-align: center;
+    float: left;
+    h1, h4 { 
+      color: $font-dk-main;
+      text-align: center;
+    }
+    h4{ padding-top: 0.2em; }
+
+  }
+}
+
+
+
+
+/* homepage - layout*/
+.home-frontpage { 
+  @extend .container-fluid; 
+  
+  padding: 0;
+
+  .row-rest{ 
+    @extend .clearfix; @extend .visible-xs-block;
+  }
+
+  .home-content{ 
+    @extend %home-wrap;
+    margin-top: $margin-vertical-em; margin-bottom: $margin-vertical-em;
+
+    >div{ 
+      @extend .row; 
+      @extend %display-flex; flex-wrap: wrap;
+    }
+
+    >div>div.halves{
+      @extend .col-xs-10; @extend .col-xs-offset-1;
+      @extend .col-sm-6;  @extend .col-sm-offset-0;
+
+      display: flex;
+      flex-direction: column;
+      margin: $margin-vertical-em auto;
+    }
+
+    h2 { 
+      font-size: 2.2em; font-weight:bold;
+    }
+  }
+
+}
+
+
+
+.graph-left-box {
+  text-align: center;
+  width: 100%;
+
+  @include border-radius(10px);
+  h2 { 
+    text-align: center;
+    color: $color-li;
+    
+  }
+  /*   additional scss for home-left-* */  
+}
+
+.graph-right-box{
+  font-size: 1.1em;
+  h2 { 
+    padding:0; margin-top:1em;
+  }
+  p  { color: $font-li-main2; display: block; margin-bottom: 2em; }
+
+  a { 
+    @include border-radius( 1em);
+    padding: 0.6em 2.5em; 
+    border: 1px solid $color-li;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+      color: $font-dk-main;
+      background-color: $color-li;
+    }
+  }
+
+}
+
+//.graph-left-box>div.box-wrapper,
+//.graph-right-box>div.box-wrapper{
+.box-wrapper{  
+  width: 100%;
+  max-width: $half-box-width;   min-height: 100px;
+  @extend .center-elem;
+}
+
+.graph-left-box>div.box-wrapper{
+  border: 2px solid $font-li-light;
+  padding:   $margin-vertical-em $margin-side-em;
+  @include border-radius(10px);
+}
+
+
+
+/* Bugs in Bootstrap $icon-font-path, overwrite them with new values. */
+@font-face {
+font-family: 'Glyphicons Halflings';
+src: url(#{$icon-font-path}#{$icon-font-name}.ttf) format('truetype');
+src: url(#{$icon-font-path}#{$icon-font-name}.eot?#iefix)
+format('embedded-opentype'),
+url(#{$icon-font-path}#{$icon-font-name}.woff) format('woff'),
+url(#{$icon-font-path}#{$icon-font-name}.ttf) , format('truetype'),
+url(#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id})
+format('svg');
+}
+

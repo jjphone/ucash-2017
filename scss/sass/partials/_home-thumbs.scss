@@ -1,0 +1,12 @@
+.home-2-thumbs{
+  margin-top: 3em; padding-top:1em;
+  border-top: 1px solid $font-li-light; 
+
+  >div{
+    @extend .col-sm-4; 
+    @extend .col-xs-12;
+    text-align: center;
+    >h3 { margin: 0.3em auto 1.1em; }
+    >p{ color: $font-li-main2;}
+  }
+}

@@ -1,0 +1,23 @@
+div#carousel-brands {
+  margin-bottom: 5em;
+  >.carousel-inner{
+    >.item{
+
+      >.carousel-col{
+        @extend .col-xs-2;
+
+        >.wrapper{ 
+          margin:5px;
+          border: 1px solid $font-li-light;
+        }
+
+        .carousel-caption{
+          display: none;
+        }
+        img {margin: 0; }
+      }
+
+      >.carousel-col:hover >.wrapper { @include box-shadow(0, 0, 5px, grey ); }
+    }
+  }
+}

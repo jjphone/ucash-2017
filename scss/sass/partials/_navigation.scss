@@ -1,0 +1,105 @@
+/* navigation.scss */
+
+/* header.php */
+.navigation-top { 
+  background: $color-li;   // #############testing #########
+  //background: red;
+}
+.navigation-top>.wrap {  
+  @extend .container-fluid; 
+  /* max-width: 100%; */  
+  //@extend .red;
+}
+
+/* navigation-top.php */
+
+
+nav.navbar {
+  @extend .navbar-fixed-top; 
+  @extend .navbar-default;
+
+  background: $color-li;
+  border:0;
+
+  a { @include link_colors( $font-dk-light, $font-dk-main,null, null); }
+  a.navbar-brand { color: $font-dk-light; }
+
+  .navbar-toggle {
+    background-color: $color-darkest;
+    >.icon-bar{ background-color: $font-dk-main;}
+  }
+  .navbar-toggle:hover, .navbar-toggle:focus { background-color: $font-dk-light; }
+  .navbar-toggle:hover >.icon-bar{ background-color: $color-li; }
+  .navbar-toggle:focus >.icon-bar{ background-color: $font-li-light; }
+
+
+  >div.navbar-header { margin-left: $margin-side-em;  }
+  >div.navbar-header>a>img{ height:20px; }
+
+  ul.menu{
+    @extend .nav;
+    @extend .navbar-nav;
+    @extend .navbar-right;
+
+    //@extend .red;
+
+    >li {
+      >a { 
+        font-size: 1.5em;
+        @include link_colors( $font-dk-light, $font-dk-main,null, null); 
+      }
+    }
+    >li.disable>a,
+    >li.current-menu-item>a
+    { cursor: default;}
+  }
+
+
+}
+
+/* when top menu is small and collapsed  */
+@media( max-width: 787px) {
+  nav.navbar >.navbar-collapse.in{
+    ul.menu{ 
+      >li:not(.current-menu-item) {
+        background-color: $color-li;
+        >a{ color: $font-dk-light; }
+
+        &:hover, &:focus{
+          background-color: $font-dk-light;
+          border-left: 2px ridge $color-li; border-right: 2px ridge $color-li; 
+          >a{ color: $color-li; }
+        }
+      }
+
+      >li.current-menu-item {
+        background-color: $color-darkest;
+        >a{ color: $font-li-light; }
+      }
+
+    }
+  }
+}
+
+/* when top menu is enough for expand */
+@media (min-width: 768px) {
+  nav.navbar .navbar-collapse ul.menu { 
+    margin-right: $margin-side-em;
+
+    >li{border:0} 
+    >li:hover, >li:focus { 
+      border: 0; 
+      >a:after{ @include short_underline( $font-dk-main); }
+    }
+
+    >li.current-menu-item>a{position: relative;}
+
+    >li.disable>a:after,
+    >li.current-menu-item>a:after {
+      @include short_underline($color-darkest);
+    }
+
+  }
+}
+
+
