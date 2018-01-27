@@ -8,7 +8,7 @@
   <h3>Hết tiền? Hãy tìm Ucash</h3>
 </div>
 <div class="copyright">
-  <p>Liên hệ CSKH : 123456789</p>
+  <p>Liên hệ CSKH : 028-7779-7778</p>
   <p>Bản quyền 2017 thuộc về Ucash</p>
   
 </div>

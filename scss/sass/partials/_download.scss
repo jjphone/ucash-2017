@@ -14,6 +14,15 @@
 
 }
 
+.quick-access input::placeholder ,
+.quick-access input::-webkit-input-placeholder  { 
+  color: $font-li-light; opacity:1;
+}
+
+
+
+
+
 .quick-access{
   
   @extend .box-wrapper;
@@ -52,11 +61,15 @@
         display: inline-block;
         border-radius: 0;
         width: 80%;
+        
+       // @include placehold-color( red );
       }
 
       >select{
         height:2.65em;
         background: $font-dk-main;
+        color: $font-li-light;
+        option{ color: $font-li-main2; }
       }
 
       >span.wpcf7-not-valid-tip { margin: 0.5em auto 1.5em; }

@@ -10,20 +10,20 @@
 
 <div>
   <div>email</div>
-  <div>xxxxxxxxx@gmail.com</div>
+  <div>offer@ucash.vn</div>
 </div>
 
 <div>
   <div>business cooperation</div>
-  <div>xxxxxxxxx@gmail.com</div>
+  <div>service@ucash.vn</div>
 </div>
 
 <div>
   <div>address</div>
-  <div>xxxxxxxxx@gmail.com</div>
+  <div>Đường số 3, khu cư xá Đô Thành, Quận 3, HCM</div>
 </div>
 
 <div>
   <div>zip code</div>
-  <div>xxxxxxxxx@gmail.com</div>
+  <div>700000</div>
 </div>

@@ -8,7 +8,7 @@
   <h3>Out of money? Find Ucash</h3>
 </div>
 <div class="copyright">
-  <p>Customer hotline: 123456789</p>
+  <p>Customer hotline: 028-7779-7778</p>
   <p>Copyright &copy; 2017 Ucash Tech All Right Reserved.</p>
   
 </div>
